@@ -1,0 +1,192 @@
+<head>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="excel.css">
+    <script src="excel.js" charset="utf-8" type="text/javascript"></script>
+</head>
+<body>
+  <div style="width: 210px; overflow: hidden; display:none">
+    <div style="width: 100px; float: left; border-style: solid;">Excel</div>
+    <div style="width: 100px; float: right; border-style: solid; background-color:lightblue">Web</div>
+  </div>
+    <table class="excelTable">
+    <tr>
+      <td  class="excel" style="width:820px;background:#1D6F42;color:white;" colspan="9"><font style="font-weight: bold">Book1 - Excel</font></td>
+    </tr>
+    <tr>
+      <td  class="excel excelBorder" style="width:20px;background:#DEDEDE;">&nbsp;</td>
+      <td  class="excel excelBorder" style="width:100px;">A</td>
+      <td  class="excel excelBorder" style="width:100px;">B</td>
+      <td  class="excel excelBorder" style="width:100px;">C</td>
+      <td  class="excel excelBorder" style="width:100px;">D</td>
+      <td  class="excel excelBorder" style="width:100px;">E</td>
+      <td  class="excel excelBorder" style="width:100px;">F</td>
+      <td  class="excel excelBorder" style="width:100px;">G</td>
+      <td  class="excel excelBorder" style="width:100px;">H</td>
+    </tr>
+    <tr>
+      <td  class="excel excelBorder" style="width:20px;">1</td>
+      <td  class="excel" width="100px">Motivation:</td>
+      <td  class="excel" id="excelBorder1" width="100px"><p id="motivation">100</p></td>
+      <td  class="excel" width="100px" id="cell1" style="display:table-cell">&nbsp;</td>
+      <td  class="excel" width="100px" id="cell2" style="display:table-cell">&nbsp;</td>
+      <td  class="excel" width="100px" id="cell3" style="display:table-cell">&nbsp;</td>
+      <td  class="excel" width="300px" colspan="3" id="cell4" style="display:none">Your motivation to develop games (ie, money)</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+    </tr>
+    <tr>
+      <td  class="excel excelBorder" style="width:20px;">2</td>
+      <td  class="excel" id="excelBorder2" width="100px">Interest:</td>
+      <td  class="excel" id="excelBorder3" width="100px"><p id="interest">0</p></td>
+      <td  class="excel" width="100px" id="cell5" style="display:table-cell">&nbsp;</td>
+      <td  class="excel" width="100px" id="cell6" style="display:table-cell">&nbsp;</td>
+      <td  class="excel" width="100px" id="cell7" style="display:table-cell">&nbsp;</td>
+      <td  class="excel" width="300px" colspan="3" id="cell8" style="display:none">People playing your game (ie, income)</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+    </tr>
+    <tr>
+      <td  class="excel excelBorder" style="width:20px;">3</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" id="excelBorder4" width="100px"><div id="levelHeading">Level</div></td>
+      <td  class="excel" id="excelBorder5" width="100px"><div id="costHeading">Cost</div></td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+    </tr>
+    <tr>
+      <td  class="excel excelBorder" style="width:20px;">4</td>
+      <td  class="excel" id="excelBorder6" width="100px">Layout:</td>
+      <td  class="excel" width="100px"><p id="layout">0</p></td>
+      <td  class="excel" id="excelBorder7" width="100px">20</td>
+      <td  class="excel" width="100px"><div id="layoutBuyLink" style="display:block"><a href="#" onclick="excelUpgrade('layout')">Buy</a></div><button id="layoutBuyButton" onclick="excelUpgrade('layout')" style="display:none;padding: 0px 32px;">Buy</button></td>
+      <td  class="excel" width="200px" colspan="2"><div id="layoutBuy1" style="display:block;">Include explanations</div><div id="layoutBuy2" style="display:none;">Make headings bold</div><div id="layoutBuy3" style="display:none;">Introduce borders</div><div id="layoutBuy4" style="display:none;">Use buttons</div><div id="layoutBuy5" style="display:none;">Purchased!</div></td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+    </tr>
+    <tr>
+      <td  class="excel excelBorder" style="width:20px;">5</td>
+      <td  class="excel" width="100px">Mechanics:</td>
+      <td  class="excel" width="100px"><p id="mechanics">0</p></td>
+      <td  class="excel" id="excelBorder8" width="100px">50</td>
+      <td  class="excel" width="100px"><div id="mechanicsBuyLink" style="display:block"><a href="#" onclick="excelUpgrade('mechanics')">Buy</a></div><button id="mechanicsBuyButton" onclick="excelUpgrade('mechanics')" style="display:none;padding: 0px 32px;">Buy</button></td>
+      <td  class="excel" width="200px" colspan="2"><div id="mechanicsBuy1" style="display:block;">Use basic formulas</div><div id="mechanicsBuy2" style="display:none;">Improved formulas</div><div id="mechanicsBuy3" style="display:none;">Learn macros</div><div id="mechanicsBuy4" style="display:none;">Use multiple sheets</div><div id="mechanicsBuy5" style="display:none;">Purchased!</div></td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+    </tr>
+    <tr>
+      <td  class="excel excelBorder" style="width:20px;">6</td>
+      <td  class="excel" id="excelBorder9" width="100px">Humour:</td>
+      <td  class="excel" id="excelBorder10" width="100px"><p id="humour">0</p></td>
+      <td  class="excel" id="excelBorder11" width="100px">10</td>
+      <td  class="excel" width="100px"><div id="humourBuyLink" style="display:block"><a href="#" onclick="excelUpgrade('humour')">Buy</a></div><button id="humourBuyButton" onclick="excelUpgrade('humour')" style="display:none;padding: 0px 32px;">Buy</button></td>
+      <td  class="excel" width="200px" colspan="2"><div id="humourBuy1" style="display:block;">Use basic concept</div><div id="humourBuy2" style="display:none;">Include punny names</div><div id="humourBuy3" style="display:none;">Reference internal joke</div><div id="humourBuy4" style="display:none;">Purchased!</div></td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+    </tr>
+    <tr>
+      <td  class="excel excelBorder" style="width:20px;">7</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+    </tr>
+    <tr>
+      <td  class="excel excelBorder" style="width:20px;">8</td>
+      <td  class="excel" width="100px"><div id="excelReleaseLink" style="display:block"><a href="#" onclick="excelRelease()">Release game</a></div><button id="excelReleaseButton" onclick="excelRelease()" style="display:none;padding: 0px 5px;">Release game</button></td>
+      <td  class="excel" width="100px" id="cell9" style="display:table-cell">&nbsp;</td>
+      <td  class="excel" width="100px" id="cell10" style="display:table-cell">&nbsp;</td>
+      <td  class="excel" width="100px" id="cell11" style="display:table-cell">&nbsp;</td>
+      <td  class="excel" width="300px" colspan="3" id="cell12" style="display:none">You need to release a game for people to play</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+    </tr>
+    <tr>
+      <td  class="excel excelBorder" style="width:20px;">9</td>
+      <td  class="excel" width="100px"><div id="excelResetLink" style="display:block"><a href="#" onclick="excelReset()">Scrap game</a></div><button id="excelResetButton" onclick="excelReset()" style="display:none;padding: 0px 5px;">Scrap game</button></td>
+      <td  class="excel" width="100px" id="cell13" style="display:table-cell">&nbsp;</td>
+      <td  class="excel" width="100px" id="cell14" style="display:table-cell">&nbsp;</td>
+      <td  class="excel" width="100px" id="cell15" style="display:table-cell">&nbsp;</td>
+      <td  class="excel" width="300px" colspan="3" id="cell16" style="display:none">Not all games can be winners; start again</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+    </tr>
+    <tr>
+      <td  class="excel excelBorder" style="width:20px;">10</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+    </tr>
+    <tr>
+      <td  class="excel excelBorder" style="width:20px;">11</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+    </tr>
+    <tr>
+      <td  class="excel excelBorder" style="width:20px;">12</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+    </tr>
+    <tr>
+      <td  class="excel excelBorder" style="width:20px;">13</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+    </tr>
+    <tr>
+      <td  class="excel excelBorder" style="width:20px;">14</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+      <td  class="excel" width="100px">&nbsp;</td>
+    </tr>
+  </table>
+<div id="css-only-modals">
+	<input id="modal1" class="css-only-modal-check" type="checkbox" checked/>
+	<div class="css-only-modal">
+		<p>You've played a few incremental games, and kinda have an idea for making one.</p>
+		<p>Problem is you don't know how to program anything.</p>
+		<p>You do know a little bit of Excel though...</p>
+		<label for="modal1" class="css-only-modal-btn btn-modal">&nbsp;Okay&nbsp;</label>
+	</div>
+<div id="screen-shade"></div>
+</div>
+</body>

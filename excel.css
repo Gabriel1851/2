@@ -1,0 +1,45 @@
+.excel {
+  border: 1px solid black;
+  border-collapse: collapse;
+  display:table-cell;
+  height: 15px;
+  padding: 5px;
+  text-align: left;
+}
+.excelBorder {
+  background: #DEDEDE;;
+  text-align: center;
+}
+.excelTable {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+}
+.excelTableTopLeft {
+  border-top: 5px solid;
+  border-left: 5px solid;
+}
+.excelTableTop {
+  border-top: 5px solid;
+}
+.excelTableTopRight {
+  border-top: 5px solid;
+  border-right: 5px solid;
+}
+.excelTableLeft {
+  border-left: 5px solid;
+}
+.excelTableRight {
+  border-right: 5px solid;
+}
+.excelTableBottomLeft {
+  border-bottom: 5px solid;
+  border-left: 5px solid;
+}
+.excelTableBottom {
+  border-bottom: 5px solid;
+}
+.excelTableBottomRight {
+  border-bottom: 5px solid;
+  border-right: 5px solid;
+}
