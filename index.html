@@ -1,6 +1,7 @@
 <head>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="excel.css">
+    <script src="main.js" charset="utf-8" type="text/javascript"></script>
     <script src="excel.js" charset="utf-8" type="text/javascript"></script>
 </head>
 <body>
@@ -179,14 +180,16 @@
       <td  class="excel" width="100px">&nbsp;</td>
     </tr>
   </table>
-<div id="css-only-modals">
-	<input id="modal1" class="css-only-modal-check" type="checkbox" checked/>
-	<div class="css-only-modal">
-		<p>You've played a few incremental games, and kinda have an idea for making one.</p>
-		<p>Problem is you don't know how to program anything.</p>
-		<p>You do know a little bit of Excel though...</p>
-		<label for="modal1" class="css-only-modal-btn btn-modal">&nbsp;Okay&nbsp;</label>
-	</div>
-<div id="screen-shade"></div>
-</div>
+<div id="intro" style="display:block;opacity: 0.4;background: #000;position: absolute;left: 0;right: 0;top: 0;bottom: 0;pointer-events: none;z-index: 1"></div>
+<div id="intro1b" class="helpBubble" style="display:block;left:300px;top:200px;width:450px;height:200px;border-radius: 10px"><div class="helpContents" style="display:block;">You've spent a while playing incremental games and figure you'll give making your own a try.<br />&nbsp;<br />You don't actually now how to program anything though.<br />&nbsp;<br />You do know a little bit of Excel which would probably work as a place to start learning...<br />&nbsp;<br /><a href="#" onclick="intro1()">Next</a></div></div>
+<div id="intro2a" class="leftArrow" style="display:none;left:240px;top:70px;"></div>
+<div id="intro2b" class="helpBubble" style="display:none;left:250px;top:70px;"><div class="helpContents">Your motivation to work on your game. Motivation will let you "buy" game elements like layout or mechanics.<br />&nbsp;<br /><a href="#" onclick="intro2()">Next</a></div></div>
+<div id="intro3a" class="leftArrow" style="display:none;left:240px;top:95px;"></div>
+<div id="intro3b" class="helpBubble" style="display:none;left:250px;top:95px;"><div class="helpContents">The number of people playing your game. More players gives more motivation.<br />&nbsp;<br /><a href="#" onclick="intro3()">Next</a></div></div>
+<div id="intro4a" class="leftArrow" style="display:none;left:440px;top:160px;"></div>
+<div id="intro4b" class="helpBubble" style="display:none;left:450px;top:160px;"><div class="helpContents">The different game factors that you can work on. Different combinations will bring different numbers of players.<br />&nbsp;<br /><a href="#" onclick="intro4()">Next</a></div></div>
+<div id="intro5a" class="leftArrow" style="display:none;left:140px;top:260px;"></div>
+<div id="intro5b" class="helpBubble" style="display:none;left:150px;top:260px;"><div class="helpContents">Release your game here to try and attract players.<br />&nbsp;<br /><a href="#" onclick="intro5()">Next</a></div></div>
+<div id="intro6a" class="leftArrow" style="display:none;left:140px;top:290px;"></div>
+<div id="intro6b" class="helpBubble" style="display:none;left:150px;top:290px;"><div class="helpContents">If your game is no good, you will need to come up with another idea.<br />&nbsp;<br /><a href="#" onclick="intro6()">Next</a></div></div>
 </body>

@@ -69,6 +69,9 @@ var mainExcelGameLoop = window.setInterval(function() {
   diff = Date.now() - excelGameData.lastTick;
   excelGameData.lastTick = Date.now()
   excelMotivation();
+  if (excelGameData.Motivation < 10 && excelGameData.Interest == 0) {
+    alert("With no players and little motivation, there's nothing to do but start again.");
+  }
 }, 1000)
 
 function excelMotivation () {
@@ -77,8 +80,10 @@ function excelMotivation () {
     if (e > 90) {
       if (excelGameData.interest < excelGameData.mechanics * 3) {
         excelGameData.interest += 1
+      } else {
+        excelGameData.interest = excelGameData.mechanics * 3
       }
-      } else if (e < 20) {
+    } else if (e < 20) {
       excelGameData.interest -= 1
     }
   }
